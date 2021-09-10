@@ -18,8 +18,8 @@ def webhook():
     req = request.get_json(silent=True, force=True)
     fulfillmentText = ''
     sum = 0
-    query_result = req.get('queryResult')
-    if query_result.get('action') == 'rules':
+    query_result = req.get('intent')
+    if query_result.get('displayName') == 'rules':
         fulfillmentText = 'Fuck off'
     return {
         "fulfillmentText": fulfillmentText,
