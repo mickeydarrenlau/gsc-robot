@@ -25,6 +25,7 @@ def webhook():
         for i in rules:
             parsed = i + '\n'
         fulfillmentText = parsed
+        print(parsed)
     return {
         "fulfillmentText": fulfillmentText,
         "source": "webhookdata"
