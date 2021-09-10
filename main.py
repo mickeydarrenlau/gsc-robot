@@ -21,7 +21,6 @@ def webhook():
     query_result = req.get('queryResult')
     if query_result.get('action') == 'rules':
         fulfillmentText = 'Fuck off'
-        print(parsed)
     return {
         "fulfillmentText": fulfillmentText,
         "source": "webhookdata"
