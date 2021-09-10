@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, request
 #sample
 #num1 = int(query_result.get('parameters').get('number'))
 #num2 = int(query_result.get('parameters').get('number1'))
