@@ -7,7 +7,6 @@ from flask import Flask, request
 #print('here num2 = {0}'.format(num2))
 #fulfillmentText = 'The sum of the two numbers is ' + sum
 app = Flask(__name__)
-rules = ['1.Do not disturb', '2. Do not run']
 
 @app.route('/')
 def welcome():
@@ -21,10 +20,7 @@ def webhook():
     sum = 0
     query_result = req.get('queryResult')
     if query_result.get('action') == 'rules':
-        parsed = 'Rules: ' + '\n'
-        for i in rules:
-            parsed = i + '\n'
-        fulfillmentText = parsed
+        fulfillmentText = 'Fuck off'
         print(parsed)
     return {
         "fulfillmentText": fulfillmentText,
