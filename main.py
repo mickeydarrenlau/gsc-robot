@@ -4,7 +4,7 @@ books = {
     "Tommyinit's story": "no",
     "Google": "no",
     "The big book of knowledge": 'no',
-    "lol": 'yes',
+    "lol": 'no',
 }
 books1 = [key for key, value in books.items() if value == "no"]
 print(books1)
